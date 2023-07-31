@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color:bisque;
+        }
+        #val1,body,#val2,#result{
+            text-transform:capitalize;
+            font-size:large;
+        }
+        #op{
+            color:blue;
+        }
+        #result{
+            margin-left:40px;
+            width:150px;
+            height:30px;
+            color:red;
+           
+        }
+        label{
+            margin-left:60px;
+        }
+        div{
+            width:450px;
+            height:300px;
+            border:2px solid black;
+            background-color:cyan;
+            margin-top:150px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <center>
+        <div>
+    enter number 1:<input type="number"  id="val1"/><br>
+    <br>
+    enter number 2:<input type="number"  id="val2"/>
+    <br>
+    <br>
+    <select  id="op">
+        <option >+</option>
+        <option >-</option>
+        <option >*</option>
+        <option>/</option>
+        <option >%</option>
+        <option >//</option>
+    </select>
+    <button onclick="calculator()">=</button>
+    <br>
+    <br>
+    <label>result:</label><input type="text" id="result">
+    <script src="calculator.js"></script>
+    </div>
+    </center>
+
+</body>
+</html>
